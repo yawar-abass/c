@@ -1,0 +1,41 @@
+# Object files
+*.o
+
+# Compiled binary files
+*.out
+*.exe
+
+# Libraries
+*.a
+*.so
+
+# Debug files
+*.gch
+*.dSYM/
+
+# Dependency files
+*.d
+
+# Build directories
+/build/
+/bin/
+/lib/
+
+# Editor specific files
+*.swp
+*~
+.vscode/
+./vscode/
+.idea/
+.DS_Store
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+
+*.txt
+*.dat
+*.bin
