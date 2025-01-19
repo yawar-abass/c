@@ -14,3 +14,5 @@ int main()
     result = ptr(10, 20);
     printf("%d", result);
 }
+
+// callback and recursion
