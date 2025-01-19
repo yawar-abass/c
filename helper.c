@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "helper.h"
 
-extern void displayArray(int *arr, int size)
+void printArray(int *arr, int size)
 {
     printf("[");
     for (int i = 0; i < size; i++)
@@ -10,7 +11,7 @@ extern void displayArray(int *arr, int size)
     printf("] \n");
 }
 
-extern void displayArrayWithAdd(int *arr, int size)
+void displayArrayWithAddress(int *arr, int size)
 {
     printf("[");
     for (int i = 0; i < size; i++)
