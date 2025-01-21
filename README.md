@@ -71,4 +71,4 @@ Contributions are welcome! If you'd like to add your own programs or improve exi
 
 ---
 
-Happy Coding! 🚀
+Happy Coding!
