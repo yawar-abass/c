@@ -31,6 +31,7 @@ int main()
     // writeStruct(car2, fptr);
     rewind(fptr);
     Car car3;
+
     readStruct(&car3, fptr);
     printf("%s %d", car3.name, car3.modal);
     fclose(fptr);
