@@ -1,21 +1,33 @@
 #include <stdio.h>
-#include <conio.h>
+#include <string.h>
 
-#define SUM(a, b) (a + b);
-
-void swap(int arr[])
+struct person
 {
-    for (int i = 0; i < 3; i++)
-    {
-        printf("%d", i);
-    }
-}
+    char name[10];
+    int age;
+};
 
 int main()
 {
+    FILE *fp;
+    fp = fopen("texo.bin", "wb+");
+    if (fp == NULL)
+    {
+        printf("file not found");
+        return 0;
+    }
 
-    int a = SUM(13, 4);
+    struct person p1;
+    strcpy(p1.name, "Yawar");
+    p1.age = 21;
 
-    printf("%d", a);
+    fwrite(&p1, sizeof(p1), 1, fp);
+
+    rewind(fp);
+
+    struct person p2;
+    fread(&p2, sizeof(p2), 1, fp);
+
+    printf(" %s", p2.name);
     return 0;
 }
